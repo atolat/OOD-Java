@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="235.81349206349208" y="212.0">com.ood.moviebooking.Movie</node>
+    <node x="70.06349206349205" y="1182.0">com.ood.moviebooking.MovieBookingApp</node>
+    <node x="723.3343253968254" y="257.0">com.ood.moviebooking.GuestUser</node>
+    <node x="593.713009259259" y="11.0">com.ood.moviebooking.User</node>
+    <node x="122.71539954870826" y="728.0">com.ood.moviebooking.Ticket</node>
+    <node x="423.81349206349205" y="245.0">com.ood.moviebooking.RegisteredUser</node>
+    <node x="149.41626050420155" y="11.0">com.ood.moviebooking.Language</node>
+    <node x="92.37134259259233" y="494.0">com.ood.moviebooking.Shows</node>
+    <node x="207.71539954870826" y="942.0">com.ood.moviebooking.TicketBookingThread</node>
+    <node x="11.813492063492049" y="190.0">com.ood.moviebooking.Theater</node>
+    <node x="371.9852408185496" y="0.0">com.ood.moviebooking.Genre</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.ood.moviebooking.Movie" target="com.ood.moviebooking.Language">
+      <point x="-63.0" y="-60.0" />
+      <point x="256.81349206349205" y="170.0" />
+      <point x="205.41626050420155" y="170.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.Movie" target="com.ood.moviebooking.Genre">
+      <point x="21.0" y="-60.0" />
+      <point x="340.81349206349205" y="160.0" />
+      <point x="386.6519074852162" y="160.0" />
+      <point x="-29.33333333333337" y="60.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.TicketBookingThread" target="com.ood.moviebooking.RegisteredUser">
+      <point x="50.0" y="-60.0" />
+      <point x="357.71539954870826" y="912.0" />
+      <point x="399.5463425925924" y="912.0" />
+      <point x="399.5463425925924" y="444.0" />
+      <point x="530.063492063492" y="444.0" />
+      <point x="-21.25" y="27.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.MovieBookingApp" target="com.ood.moviebooking.Language">
+      <point x="-147.29411764705867" y="-38.0" />
+      <point x="79.26937441643338" y="1162.0" />
+      <point x="0.0" y="1162.0" />
+      <point x="0.0" y="170.0" />
+      <point x="168.08292717086817" y="170.0" />
+      <point x="-37.33333333333337" y="49.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.MovieBookingApp" target="com.ood.moviebooking.Movie">
+      <point x="55.23529411764707" y="-38.0" />
+      <point x="281.7987861811391" y="1112.0" />
+      <point x="484.1935741518829" y="1112.0" />
+      <point x="484.1935741518829" y="404.0" />
+      <point x="382.81349206349205" y="404.0" />
+      <point x="63.0" y="60.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.MovieBookingApp" target="com.ood.moviebooking.Ticket">
+      <point x="-18.41176470588232" y="-38.0" />
+      <point x="208.15172735760973" y="1092.0" />
+      <point x="116.39682539682545" y="1092.0" />
+      <point x="116.39682539682545" y="922.0" />
+      <point x="151.54873288204163" y="922.0" />
+      <point x="-57.66666666666663" y="82.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.MovieBookingApp" target="com.ood.moviebooking.RegisteredUser">
+      <point x="73.64705882352942" y="-38.0" />
+      <point x="300.21055088702144" y="1122.0" />
+      <point x="547.7004205571116" y="1122.0" />
+      <point x="547.7004205571116" y="464.0" />
+      <point x="615.063492063492" y="464.0" />
+      <point x="63.74999999999997" y="27.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.MovieBookingApp" target="com.ood.moviebooking.TicketBookingThread">
+      <point x="2.8421709430404007E-14" y="-38.0" />
+      <point x="226.56349206349208" y="1082.0" />
+      <point x="257.71539954870826" y="1082.0" />
+      <point x="-50.0" y="60.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.RegisteredUser" target="com.ood.moviebooking.User">
+      <point x="-63.75" y="-27.0" />
+      <point x="487.56349206349205" y="170.0" />
+      <point x="609.838009259259" y="170.0" />
+      <point x="-48.375" y="49.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.MovieBookingApp" target="com.ood.moviebooking.Genre">
+      <point x="110.47058823529409" y="-38.0" />
+      <point x="337.03408029878614" y="1142.0" />
+      <point x="689.313492063492" y="1142.0" />
+      <point x="689.313492063492" y="160.0" />
+      <point x="445.31857415188296" y="160.0" />
+      <point x="29.33333333333337" y="60.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.Shows" target="com.ood.moviebooking.Ticket">
+      <point x="17.111111111111086" y="82.0" />
+      <point x="186.4824537037034" y="708.0" />
+      <point x="209.21539954870826" y="708.0" />
+      <point x="0.0" y="-82.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.RegisteredUser" target="com.ood.moviebooking.Ticket">
+      <point x="-63.75" y="27.0" />
+      <point x="487.56349206349205" y="434.0" />
+      <point x="368.55792717086825" y="434.0" />
+      <point x="368.55792717086825" y="708.0" />
+      <point x="278.4153995487083" y="708.0" />
+      <point x="69.20000000000005" y="-82.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.Ticket" target="com.ood.moviebooking.Shows">
+      <point x="-69.20000000000005" y="-82.0" />
+      <point x="140.01539954870822" y="708.0" />
+      <point x="152.26023148148124" y="708.0" />
+      <point x="-17.111111111111086" y="82.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.MovieBookingApp" target="com.ood.moviebooking.Shows">
+      <point x="-73.64705882352936" y="-38.0" />
+      <point x="152.91643323996269" y="1122.0" />
+      <point x="65.16539954870825" y="1122.0" />
+      <point x="65.16539954870825" y="678.0" />
+      <point x="100.92689814814787" y="678.0" />
+      <point x="-68.44444444444446" y="82.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.MovieBookingApp" target="com.ood.moviebooking.Theater">
+      <point x="-92.05882352941171" y="-38.0" />
+      <point x="134.50466853408034" y="1132.0" />
+      <point x="50.13762177093048" y="1132.0" />
+      <point x="50.13762177093048" y="474.0" />
+      <point x="84.67063492063494" y="474.0" />
+      <point x="-29.14285714285711" y="82.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.Shows" target="com.ood.moviebooking.RegisteredUser">
+      <point x="66.0" y="-82.0" />
+      <point x="235.37134259259233" y="424.0" />
+      <point x="445.06349206349205" y="424.0" />
+      <point x="-106.25" y="27.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.Theater" target="com.ood.moviebooking.Shows">
+      <point x="58.285714285714334" y="82.0" />
+      <point x="172.09920634920638" y="384.0" />
+      <point x="147.37134259259233" y="384.0" />
+      <point x="-22.0" y="-82.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.Shows" target="com.ood.moviebooking.Theater">
+      <point x="-66.0" y="-82.0" />
+      <point x="103.37134259259233" y="474.0" />
+      <point x="113.81349206349205" y="474.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.MovieBookingApp" target="com.ood.moviebooking.GuestUser">
+      <point x="147.29411764705884" y="-38.0" />
+      <point x="373.8576097105509" y="1162.0" />
+      <point x="783.3185741518829" y="1162.0" />
+      <point x="783.3185741518829" y="474.0" />
+      <point x="813.3343253968254" y="474.0" />
+      <point x="30.0" y="15.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.Shows" target="com.ood.moviebooking.Movie">
+      <point x="22.0" y="-82.0" />
+      <point x="191.37134259259233" y="404.0" />
+      <point x="256.81349206349205" y="404.0" />
+      <point x="-63.0" y="60.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.TicketBookingThread" target="com.ood.moviebooking.Ticket">
+      <point x="-83.33333333333337" y="-60.0" />
+      <point x="224.3820662153749" y="922.0" />
+      <point x="209.21539954870826" y="922.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.GuestUser" target="com.ood.moviebooking.User">
+      <point x="30.0" y="-15.0" />
+      <point x="813.3343253968254" y="140.0" />
+      <point x="706.588009259259" y="140.0" />
+      <point x="48.375" y="49.0" />
+    </edge>
+    <edge source="com.ood.moviebooking.TicketBookingThread" target="com.ood.moviebooking.Shows">
+      <point x="16.66666666666663" y="-60.0" />
+      <point x="324.3820662153749" y="922.0" />
+      <point x="317.21539954870826" y="922.0" />
+      <point x="317.21539954870826" y="678.0" />
+      <point x="237.81578703703678" y="678.0" />
+      <point x="68.44444444444446" y="82.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6424100156494522" x="422.0" y="629.0" />
+  <SelectedNodes>
+    <node>com.ood.moviebooking.Shows</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
