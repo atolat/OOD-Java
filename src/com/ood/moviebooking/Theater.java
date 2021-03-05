@@ -10,13 +10,13 @@ public class Theater {
     private int capacity;
     private ArrayList<Shows> shows;
 
-    public Theater(String name, String location, int capacity, ArrayList<Shows> shows) {
+    public Theater(String name, String location, int capacity) {
         idCounter += 1;
         this.id = idCounter;
         this.name = name;
         this.location = location;
         this.capacity = capacity;
-        this.shows = shows;
+        this.shows = new ArrayList<>();
     }
 
     public String getName() {
