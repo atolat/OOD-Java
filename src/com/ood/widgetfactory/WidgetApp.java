@@ -27,7 +27,8 @@ class Triangle implements Shape{
 }
 
 
-class ShapeDecorator implements Shape {
+abstract class ShapeDecorator implements Shape {
+    // The decorator holds a reference to the instance of the class it is decorating
     Shape shape;
 
     public ShapeDecorator(Shape shape) {
