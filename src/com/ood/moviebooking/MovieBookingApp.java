@@ -173,5 +173,11 @@ public class MovieBookingApp {
         System.out.println(ticket3);
         System.out.println(ticket4);
 
+        /* Running this program several times, we will notice that
+        if t3 enters the bookTicket function first,
+        then ticket is allocated to Ayush,
+        otherwise ticket is allocated to Saurabh.
+         */
+
     }
 }
