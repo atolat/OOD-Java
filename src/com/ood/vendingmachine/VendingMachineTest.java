@@ -1,4 +1,7 @@
 package com.ood.vendingmachine;
+// Gumball machine to demonstrate state machine pattern
+// This pattern provides a way to model state machine transitions
+// Every state is a class that implements the transition actions
 
 interface State{
     // Actions
