@@ -9,14 +9,20 @@ public class ParkingController {
 
     public Token getToken() {
         // Return an available token based on some policy
-        // Update token state to in-use
-        return null;
+        Token token = null;
+        try {
+            token = parkingLot.getToken();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return token;
     }
 
-    public void checkout(){
+    public void checkout(Token t){
         // Complete payment
-        // Update token state to available
-
+        // Call payment service with token
+        // Return token to queue
+        parkingLot.returnToken(t);
     }
 
 
@@ -24,6 +30,13 @@ public class ParkingController {
 
 
     public static void main(String[] args) {
-        ParkingLot parkingLot = new ParkingLot("ABC",50);
+        // Create a parking lot
+        ParkingLot parkingLot = new ParkingLot("ABC",5);
+
+        // Create a parking controller
+        ParkingController pc = new ParkingController(parkingLot);
+
+        Token t1 = pc.getToken();
+        pc.checkout(t1);
     }
 }
