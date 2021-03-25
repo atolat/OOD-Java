@@ -1,6 +1,6 @@
 package com.ood.filesystem;
 
-import java.util.List;
+import java.util.Map;
 
 public class File extends Node {
     // Content store
@@ -8,6 +8,7 @@ public class File extends Node {
 
     public File(String name, String owner, String permissions) {
         super(name, owner, permissions);
+        content = "";
     }
 
     @Override
@@ -21,13 +22,13 @@ public class File extends Node {
     }
 
     @Override
-    public List<Node> getChildren(Node n) throws Exception {
+    public Map<String, Node> getChildren(Node n) throws Exception {
         throw new Exception("Operation not supported");
     }
 
     @Override
     public void StreamIn(String s) {
-        content.concat(s);
+        content += s;
     }
 
     @Override

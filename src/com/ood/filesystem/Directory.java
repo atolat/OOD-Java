@@ -1,36 +1,32 @@
 package com.ood.filesystem;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Directory extends Node {
 
-    Set<Node> children;
-
     public Directory(String name, String owner, String permissions) {
         super(name, owner, permissions);
-        this.children = new HashSet<>();
+        this.children = new HashMap<>();
     }
 
     @Override
     public void addChild(Node n) {
-        children.add(n);
+        children.put(name, n);
     }
 
     @Override
     public void removeChild(Node n) throws Exception {
-        if (children.contains(n)) {
-            children.remove(n);
+        if (children.containsKey(n.name)) {
+            children.remove(n.name);
         } else {
             throw new Exception("Cannot remove");
         }
     }
 
     @Override
-    public List<Node> getChildren(Node n) {
-        return Collections.unmodifiableList((List<Node>) children);
+    public Map<String, Node> getChildren(Node n) {
+        return children;
     }
 
     @Override

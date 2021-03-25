@@ -1,6 +1,6 @@
 package com.ood.filesystem;
 
-import java.util.List;
+import java.util.Map;
 
 public abstract class Node {
     // Unify all methods common to files and directories
@@ -9,6 +9,7 @@ public abstract class Node {
     String name;
     String owner;
     String permissions;
+    Map<String, Node> children;
 
     public Node(String name, String owner, String permissions) {
         this.id = ++idCounter;
@@ -50,7 +51,7 @@ public abstract class Node {
 
     public abstract void removeChild(Node n) throws Exception;
 
-    public abstract List<Node> getChildren(Node n) throws Exception;
+    public abstract Map<String, Node> getChildren(Node n) throws Exception;
 
     // File Specific Methods
     public abstract void StreamIn(String s) throws Exception;
