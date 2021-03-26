@@ -46,20 +46,9 @@ public abstract class Node {
         this.permissions = permissions;
     }
 
-    // Directory Specific Methods
-    public abstract void addChild(Node n) throws Exception;
-
-    public abstract void removeChild(Node n) throws Exception;
-
-    public abstract Map<String, Node> getChildren(Node n) throws Exception;
-
     // File Specific Methods
     public abstract void StreamIn(String s) throws Exception;
 
     public abstract String StreamOut() throws Exception;
 
-    // Visitor
-//    public void accept(Node n) {
-//
-//    }
 }

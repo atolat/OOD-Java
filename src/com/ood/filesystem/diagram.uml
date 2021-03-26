@@ -3,29 +3,27 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="179.33333333333331" y="0.0">com.ood.filesystem.Node</node>
-    <node x="0.0" y="327.0">com.ood.filesystem.File</node>
-    <node x="257.0" y="327.0">com.ood.filesystem.Directory</node>
+    <node x="175.37500000000003" y="0.0">com.ood.filesystem.Node</node>
+    <node x="306.0" y="304.5">com.ood.filesystem.File</node>
+    <node x="0.0" y="283.0">com.ood.filesystem.Directory</node>
   </nodes>
   <notes />
   <edges>
     <edge source="com.ood.filesystem.File" target="com.ood.filesystem.Node">
-      <point x="59.25" y="-105.0" />
-      <point x="177.75" y="307.0" />
-      <point x="250.43333333333334" y="307.0" />
-      <point x="-47.39999999999998" y="138.5" />
+      <point x="52.25" y="-72.0" />
+      <point x="462.75" y="258.0" />
+      <point x="369.625" y="258.0" />
+      <point x="83.25" y="116.5" />
     </edge>
     <edge source="com.ood.filesystem.Directory" target="com.ood.filesystem.Node">
-      <point x="-1.4210854715202004E-14" y="-105.0" />
-      <point x="379.5" y="307.0" />
-      <point x="345.23333333333335" y="307.0" />
-      <point x="47.400000000000034" y="138.5" />
+      <point x="-71.5" y="-93.5" />
+      <point x="71.5" y="258.0" />
+      <point x="203.12500000000003" y="258.0" />
+      <point x="-83.25" y="116.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="271.5" y="268.5" />
-  <SelectedNodes>
-    <node>com.ood.filesystem.Node</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="1.0" x="272.0" y="286.5" />
+  <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>

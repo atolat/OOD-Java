@@ -10,12 +10,10 @@ public class Directory extends Node {
         this.children = new HashMap<>();
     }
 
-    @Override
     public void addChild(Node n) {
         children.put(name, n);
     }
 
-    @Override
     public void removeChild(Node n) throws Exception {
         if (children.containsKey(n.name)) {
             children.remove(n.name);
@@ -24,7 +22,6 @@ public class Directory extends Node {
         }
     }
 
-    @Override
     public Map<String, Node> getChildren(Node n) {
         return children;
     }
